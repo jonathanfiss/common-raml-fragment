@@ -1,0 +1,37 @@
+#%RAML 1.0
+title: api-specification-raml
+
+protocols:
+  - HTTPS
+
+baseUri: /{host}/port/{env}-api-{apiName}/
+baseUriParameters:
+  host:
+    default: localhost:8091
+    type: string
+    enum:
+      - localhost:8091
+      - dev-api-mysite.com
+      - hml-api-mysite.com
+      - api-mysite.com
+  env:
+    default: dev
+    type: string | any
+    enum:
+      - dev
+      - hml
+      - ''
+  apiName: 
+    default: api-specification-raml
+
+uses:
+  commonFragments: common-raml-fragment.raml
+  resourceTypes: resourcetypes/generic-resourcetypes.raml
+
+/test:
+  type:
+    resourceTypes.collection
+  get:
+    is:
+      - commonFragments.hasRequestJson: {typeName: commonFragments.errorType}
+    

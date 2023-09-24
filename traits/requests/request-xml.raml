@@ -1,0 +1,9 @@
+#%RAML 1.0 Trait
+# A trait is used to extract patterns from method definitions that are common across resources.
+
+# Trait for any method containing a request body
+
+body:
+  application/xml:
+    type: <<typeName>>
+    example?: <<exampleRequest>>

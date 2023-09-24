@@ -1,0 +1,36 @@
+#%RAML 1.0 Library
+
+usage: Common RAML Fragments to standardise implementation of common aspects of RAML API Specifications.
+
+traits:
+  # Error response
+  hasCommonApikitErrorResponses: !include traits/errors/apikit-error-response.raml
+  hasCommonInternalServerErrorResponses: !include traits/errors/internal-server-error-response.raml
+  
+  # Common Headers
+  hasCommonHeaders: !include traits/headers/common-headers.raml
+  pageable: !include traits/queryParams/pageable.raml
+  sortable: !include traits/queryParams/sortable.raml
+
+  # Headers Policy
+  #There are 2 Rate Limited Traits here as they both specify a different success HTTP Code. Use as needed on the correct methods e.g. 200 for GET and 201 for POST.
+  hasRateLimitedHttp200: !include traits/headers/rate-limited-200.raml
+  hasRateLimitedHttp201: !include traits/headers/rate-limited-201.raml
+
+  # Requests
+  hasRequestJson: !include traits/requests/request-json.raml
+  hasRequestFormData: !include traits/requests/request-form-data.raml
+
+  # Responses
+  hasResponseJson200: !include traits/responses/response-json-200.raml
+  hasResponseJson201: !include traits/responses/response-json-201.raml
+  hasResponseJson202: !include traits/responses/response-json-202.raml
+  hasResponse204: !include traits/responses/response-204.raml
+  hasResponseXml200: !include traits/responses/response-xml-200.raml
+
+types:
+  errorType: !include datatypes/responses/errors/error-type.raml
+
+# uses:
+#   commonFragments: common-raml-fragment.raml
+#   resourceTypes: resourcetypes/generic-resourcetypes.raml

@@ -1,0 +1,21 @@
+#%RAML 1.0 Trait
+
+responses: 
+  500:
+    description: Internal Server Error
+    body: 
+        application/json:
+            type: !include ../datatypes/responses/errors/error-type.raml
+            example: !include ../examples/responses/error/internal-server-error.json
+  503:
+    description: Service Unavailable
+    body: 
+        application/json:
+            type: !include ../datatypes/responses/errors/error-type.raml
+            example: !include ../examples/responses/error/service-unavailable.json
+  504:
+    description: Gateway Timeout
+    body: 
+        application/json:
+            type: !include ../datatypes/responses/errors/error-type.raml
+            example: !include ../examples/responses/error/gateway-timeout.json

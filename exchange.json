@@ -1,0 +1,8 @@
+{
+    "main": "common-raml-fragment.raml",
+    "name": "common-raml-fragment",
+    "classifier": "raml-fragment",
+    "tags": [
+        "trait"
+    ]
+}

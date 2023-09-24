@@ -1,0 +1,39 @@
+#%RAML 1.0 Trait
+
+responses: 
+  400:
+    description: Bad Request
+    body: 
+        application/json:
+            type: !include ../datatypes/responses/errors/error-type.raml
+            example: !include ../examples/responses/error/bad-request.json
+  404:
+    description: Resource Not Found
+    body: 
+        application/json:
+            type: !include ../datatypes/responses/errors/error-type.raml
+            example: !include ../examples/responses/error/resource-not-found.json
+  405:
+    description: Method Not Allowed
+    body: 
+        application/json:
+            type: !include ../datatypes/responses/errors/error-type.raml
+            example: !include ../examples/responses/error/method-not-allowed.json
+  406:
+    description: Not Acceptable
+    body: 
+        application/json:
+            type: !include ../datatypes/responses/errors/error-type.raml
+            example: !include ../examples/responses/error/not-acceptable.json
+  415:
+    description: Unsupported Media Type
+    body: 
+        application/json:
+            type: !include ../datatypes/responses/errors/error-type.raml
+            example: !include ../examples/responses/error/unsuported-media-type.json
+  501:
+    description: Not Implemented
+    body: 
+        application/json:
+            type: !include ../datatypes/responses/errors/error-type.raml
+            example: !include ../examples/responses/error/not-implemented.json

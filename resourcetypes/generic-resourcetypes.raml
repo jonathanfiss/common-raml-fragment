@@ -1,0 +1,36 @@
+#%RAML 1.0 Library
+usage: API RAML resource types
+
+traits:
+  hasCommonApikitErrorResponses: !include ../traits/apikit-error-response.raml
+  hasCommonInternalServerErrorResponses: !include ../traits/internal-server-error-response.raml
+
+resourceTypes: 
+  collection:
+    usage: Use this resourceType to represent any collection
+    description: A collection of <<resourcePathName|!uppercamelcase>>
+    get?:
+      description: Get a new <<resourcePathName|!uppercamelcase|!singularize>>
+      is: 
+          - hasCommonApikitErrorResponses
+          - hasCommonInternalServerErrorResponses
+    post?:
+        description: Create a new <<resourcePathName|!uppercamelcase|!singularize>>
+        is: 
+            - hasCommonApikitErrorResponses
+            - hasCommonInternalServerErrorResponses
+    put?:
+        description: Update a new <<resourcePathName|!uppercamelcase|!singularize>>
+        is: 
+            - hasCommonApikitErrorResponses
+            - hasCommonInternalServerErrorResponses
+    patch?:
+        description: Update parcial a new <<resourcePathName|!uppercamelcase|!singularize>>
+        is: 
+            - hasCommonApikitErrorResponses
+            - hasCommonInternalServerErrorResponses
+    delete?:
+        description: Delete a new <<resourcePathName|!uppercamelcase|!singularize>>
+        is: 
+            - hasCommonApikitErrorResponses
+            - hasCommonInternalServerErrorResponses
