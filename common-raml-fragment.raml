@@ -19,6 +19,7 @@ traits:
 
   # Requests
   hasRequestJson: !include traits/requests/request-json.raml
+  hasRequestXml: !include traits/requests/request-xml.raml
   hasRequestFormData: !include traits/requests/request-form-data.raml
 
   # Responses
@@ -31,6 +32,5 @@ traits:
 types:
   errorType: !include datatypes/responses/errors/error-type.raml
 
-# uses:
-#   commonFragments: common-raml-fragment.raml
-#   resourceTypes: resourcetypes/generic-resourcetypes.raml
+uses:
+  resourceTypes: resourcetypes/generic-resourcetypes.raml
