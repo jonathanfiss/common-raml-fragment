@@ -1,2 +1,0 @@
-- [] ajustar os exemplos de erro
-- [] tipo vazio para variavel env não funciona
