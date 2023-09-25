@@ -1,13 +1,6 @@
 {
     "code": "100200300",
-    "message": "Missing required header - x-api-correlation-id",
-    "correlationId": "101-aaa-bbb-ccc-ddd-202",
-    "timestamp": "2020-01-01T00:00:01",
-    "details": [
-        {
-            "code": "100200300",
-            "message": "Missing required header - x-api-correlation-id"
-        }
-    ],
-    "additionalDetails": ""
+    "message": "Gateway Timeout",
+    "correlationId": "d449cf4e-987b-45bb-a56c-a386984ca50a",
+    "timestamp": "2020-01-01T00:00:01"
 }
