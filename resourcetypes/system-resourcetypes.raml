@@ -1,0 +1,47 @@
+#%RAML 1.0 Library
+usage: API RAML resource types
+
+uses:
+  security: exchange_modules/ebd9d6f2-2413-467f-85d4-803be06dd391/securities-raml-fragment/1.0.0/securities-raml-fragment.raml
+
+traits:
+  hasCommonApikitErrorResponses: !include ../traits/errors/apikit-error-response.raml
+  hasCommonInternalServerErrorResponses: !include ../traits/errors/internal-server-error-response.raml
+  hasCommonHeaders: !include ../traits/headers/common-headers.raml
+
+resourceTypes: 
+  collection:
+    usage: Use this resourceType to represent any collection
+    description: A collection of <<resourcePathName|!uppercamelcase>>
+    securedBy:
+      - security.clientEnforcement
+    get?:
+      description: Get a new <<resourcePathName|!uppercamelcase|!singularize>>
+      is: 
+          - hasCommonHeaders
+          - hasCommonApikitErrorResponses
+          - hasCommonInternalServerErrorResponses
+    post?:
+        description: Create a new <<resourcePathName|!uppercamelcase|!singularize>>
+        is: 
+            - hasCommonHeaders
+            - hasCommonApikitErrorResponses
+            - hasCommonInternalServerErrorResponses
+    put?:
+        description: Update a new <<resourcePathName|!uppercamelcase|!singularize>>
+        is: 
+            - hasCommonHeaders
+            - hasCommonApikitErrorResponses
+            - hasCommonInternalServerErrorResponses
+    patch?:
+        description: Update parcial a new <<resourcePathName|!uppercamelcase|!singularize>>
+        is: 
+            - hasCommonHeaders
+            - hasCommonApikitErrorResponses
+            - hasCommonInternalServerErrorResponses
+    delete?:
+        description: Delete a new <<resourcePathName|!uppercamelcase|!singularize>>
+        is: 
+            - hasCommonHeaders
+            - hasCommonApikitErrorResponses
+            - hasCommonInternalServerErrorResponses

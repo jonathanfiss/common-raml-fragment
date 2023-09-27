@@ -9,8 +9,8 @@ traits:
   
   # Common Headers
   hasCommonHeaders: !include traits/headers/common-headers.raml
-  pageable: !include traits/queryParams/pageable.raml
-  sortable: !include traits/queryParams/sortable.raml
+  hasPageable: !include traits/queryParams/pageable.raml
+  hasSortable: !include traits/queryParams/sortable.raml
 
   # Headers Policy
   #There are 2 Rate Limited Traits here as they both specify a different success HTTP Code. Use as needed on the correct methods e.g. 200 for GET and 201 for POST.
@@ -34,3 +34,6 @@ types:
 
 uses:
   resourceTypes: resourcetypes/generic-resourcetypes.raml
+  experienceResourceTypes: resourcetypes/experience-resourcetypes.raml
+  processResourceTypes: resourcetypes/process-resourcetypes.raml
+  systemResourceTypes: resourcetypes/system-resourcetypes.raml

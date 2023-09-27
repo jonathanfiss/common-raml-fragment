@@ -4,5 +4,12 @@
     "classifier": "raml-fragment",
     "tags": [
         "trait"
+    ],
+    "dependencies": [
+        {
+            "groupId": "",
+            "assetId": "securities-raml-fragment",
+            "version": "1.0.0"
+        }
     ]
 }
