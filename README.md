@@ -20,17 +20,6 @@
   <p align="center">A template with reusable fragments to boost your projects!</p> 
 </div>
 
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li><a href="#about-the-project">About The Project</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
-
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
@@ -43,29 +32,32 @@ The project offers a variety of key resources to assist in the development of yo
 ### Resource Types
 
 1. **System Layer**: This resource type is designed for the system layer and includes security measures such as `clientEnforcement`, as well as common headers shared across layers.
-
 2. **Process Layer**: Intended for the processing layer, this resource type also includes `clientEnforcement` security measures and common headers across layers.
-
 3. **Experience Layer**: For the experience layer, this resource type implements `oAuth2.0` security measures suitable for specific authentication scenarios.
-
 4. **Generic**: This resource type provides a generic approach for other cases where none of the previous types directly apply.
 
 ### Standard Structures
 
 - **Default Error Structure**: Defines the main error types that can be returned by the API using APIkit policies.
-
 - **Common Headers Across Layers**: Includes headers that are shared across multiple layers of your API, ensuring consistency and compliance.
-
 - **Query Parameters for Pagination and Sorting**: Defines common parameters used for pagination and sorting of results in your API calls.
-
 - **Response Headers for Rate Limit Policies**: Defines response headers used in conjunction with rate-limiting policies.
-
 - **Request Structures**: Includes request structures for common formats such as JSON, XML, and form-data.
-
 - **Response Structures**: Defines response structures with HTTP status codes 200, 201, 202, and 204, for formats such as JSON and XML.
 
 The **Common RAML Fragment** project streamlines the process of creating high-quality RAML specifications, saving time and ensuring compliance with established standards. Use these reusable resources to create more consistent and well-documented APIs.
 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Usage Instructions
+
+1. Create a new RAML Fragment project in Design Centre named: "Common RAML Fragments"
+2. Add all the contents of this repository into a ZIP excluding the license and readme.md file.
+3. Go to your Design Centre Project and choose "Import", then select the ZIP.
+4. Ensure you set the root RAML as the one which has been imported.
+5. Publish this asset to Exchange.
+7. This asset can now be imported into any new API Specification Design Centre project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
