@@ -90,6 +90,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 Used as the basis for creating this template.
 
 * [Getting Started With RAML 1.0](https://medium.com/@shiv.jalli_26300/getting-started-with-raml-1-0-406377f8c1ab)
+* [3 types of API fragments design strategies](https://blogs.mulesoft.com/api-integration/patterns/api-fragments-design-strategies/)
 * [Eliminate Redundancies in RAML with Resource Types and Traits](https://www.baeldung.com/simple-raml-with-resource-types-and-traits)
 * [RAML Version 1.0: RESTful API Modeling Language](https://github.com/raml-org/raml-spec/blob/master/versions/raml-10/raml-10.md/#resource-types-and-traits)
 
