@@ -6,16 +6,16 @@ responses:
     body: 
         application/json:
             type: !include ../../datatypes/responses/errors/error-type.raml
-            example: !include ../../examples/responses/error/internal-server-error.json
+            example: !include ../../examples/responses/errors/internal-server-error.json
   503:
     description: Service Unavailable
     body: 
         application/json:
             type: !include ../../datatypes/responses/errors/error-type.raml
-            example: !include ../../examples/responses/error/service-unavailable.json
+            example: !include ../../examples/responses/errors/service-unavailable.json
   504:
     description: Gateway Timeout
     body: 
         application/json:
             type: !include ../../datatypes/responses/errors/error-type.raml
-            example: !include ../../examples/responses/error/gateway-timeout.json
+            example: !include ../../examples/responses/errors/gateway-timeout.json
