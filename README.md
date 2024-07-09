@@ -54,11 +54,10 @@ The **Common RAML Fragment** project streamlines the process of creating high-qu
 
 (optional step) Import the following [security](https://github.com/jonathanfiss/securities-raml-fragment) project to use files (experience-resourcetypes.raml, process-resourcetypes.raml and system-resourcetypes.raml), these files are not mandatory, they are to show that it is possible to customize the fragment accordingly with the layer that is using the fragment with security policies. If you do not import the security fragment, remove the mentioned files.
 1. Create a new RAML Fragment project in Design Centre named: "Common RAML Fragments"
-2. Add all the contents of this repository into a ZIP excluding the license and readme.md file.
-3. Go to your Design Centre Project and choose "Import", then select the ZIP.
-4. Ensure you set the root RAML as the one which has been imported.
-5. Publish this asset to Exchange.
-7. This asset can now be imported into any new API Specification Design Centre project.
+2. Go to your Design Centre Project and choose "Import", then select the ZIP.
+3. Ensure you set the root RAML as the one which has been imported.
+4. Publish this asset to Exchange.
+5. This asset can now be imported into any new API Specification Design Centre project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
